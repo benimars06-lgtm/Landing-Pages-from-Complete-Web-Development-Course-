@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN Page</title>
+    <style>
+        body { 
+            /*Font families, have other fonts to fall onto in case first font family can't be found*/
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #093A3E;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #2D936C;
+            border-radius: 10px;
+            border-width: solid rgb(10, 135, 50) 100 px;
+            padding: 30px;
+            width: 300px;
+        }
+       .name {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .login {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        h2 {
+            color: rgb(1, 114, 102);
+            text-align: center;
+            margin-bottom: 20px;
+
+        }
+
+        #loginForm {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid blueviolet;
+            border-radius: 9px;
+            background-color: beige;
+        }
+
+        #nameLogin {
+            margin-bottom: 15px;
+            padding: 5px;
+            border: 1px solid blueviolet;
+            border-radius: 9px;
+            background-color: beige;
+        }
+
+
+        button {
+            background-color: aquamarine;
+            border-radius: 5px;
+            color: #009c85;
+            padding: 10px;
+        }
+
+        button:hover {
+            background-color: rgb(0, 255, 0);
+        }
+
+        span {
+            background-color: #C7FFDA;
+            padding: 10px;
+            border-radius: 10px;
+            border-width: thick 400px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2><span>Login</span></h2>
+        <form class="name">
+            <input type="text" placeholder="First Name" id="nameLogin">
+            <input type="text" placeholder="Last Name" id="nameLogin">
+        </form>
+        <form class="login">
+            <input type="email" name="" id="loginForm" placeholder="Email@email.com">
+            <input type="password" name="" id="loginForm" placeholder="Password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
